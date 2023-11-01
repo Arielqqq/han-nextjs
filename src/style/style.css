@@ -1,0 +1,16 @@
+.product-detail__dateRange {
+    margin-top: 5px;
+    display: flex;
+}
+.product-detail__dateRange > label {
+    width: 100px;
+}
+
+.customer-info-container {
+    margin-top: 10px;
+}
+
+.product-price {
+    margin: 10px;
+    display: flex;
+}

@@ -12,6 +12,7 @@ fragment PageLandingFields on PageLanding {
   # Uncomment the line below to add the Greeting field to the query
   # greeting
   heroBannerHeadline
+  description
   heroBannerHeadlineColor
   heroBannerImage {
     ...ImageFields

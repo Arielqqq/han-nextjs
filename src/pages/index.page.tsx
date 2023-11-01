@@ -12,7 +12,6 @@ import { getServerSideTranslations } from '@src/pages/utils/get-serverside-trans
 const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { t } = useTranslation();
   const page = useContentfulLiveUpdates(props.page);
-
   return (
     <>
       {page.seoFields && <SeoFields {...page.seoFields} />}
@@ -39,7 +38,6 @@ export const getServerSideProps: GetServerSideProps = async ({ locale, preview }
     const gqlClient = preview ? previewClient : client;
 
     const data = await gqlClient.pageLanding({ locale, preview });
-
     const page = data.pageLandingCollection?.items[0];
 
     if (!page) {

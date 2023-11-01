@@ -44,6 +44,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params, locale, p
 
   try {
     const data = await gqlClient.pageProduct({ slug: params.slug.toString(), locale, preview });
+  
     const product = data.pageProductCollection?.items[0];
 
     if (!product) {

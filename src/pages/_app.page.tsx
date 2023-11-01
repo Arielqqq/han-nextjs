@@ -3,7 +3,8 @@ import { ContentfulLivePreviewProvider } from '@contentful/live-preview/react';
 import localFont from '@next/font/local';
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
-import { useRouter } from "next/router"
+import { useRouter } from "next/router";
+import 'src/style/style.css';
 
 import { Layout } from '@src/components/templates/layout';
 import { theme } from '@src/theme';

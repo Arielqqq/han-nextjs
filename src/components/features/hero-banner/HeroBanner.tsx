@@ -24,6 +24,7 @@ export const HeroBanner = ({
   // greeting,
   heroBannerHeadline,
   heroBannerHeadlineColor,
+  description,
   heroBannerImage,
   sys: { id: entryId },
 }: PageLandingFieldsFragment) => {
@@ -99,6 +100,8 @@ export const HeroBanner = ({
             {...heroBannerImage}
           />
         )}
+        <h1>{heroBannerHeadline}</h1>
+        <p>{description}</p>
       </StyledBox>
 
       <Flex
@@ -125,7 +128,8 @@ export const HeroBanner = ({
               {/* Tutorial: contentful-and-the-starter-template.md
               {/* Uncomment the line below to render the Greeting field value */}
               {/* {greeting} {' '} */}
-              {heroBannerHeadline}
+              {heroBannerHeadline}<br/>
+              {description}
             </Heading>
           </motion.div>
         </Container>
